@@ -1,0 +1,4 @@
+grid-tempalte-columns & grid-tempalte-rows 
+  mendefinisikan kolom/ baris ddengan cara merepresentasikan ukuran grid trak
+  dan spasi merpresentasikan grid line
+ 

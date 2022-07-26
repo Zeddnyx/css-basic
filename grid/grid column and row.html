@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="" content="">
+		<title></title>
+		<style type="text/css" media="all">
+			html,
+			body {
+				margin: 0px;
+				padding: 0px;
+				height: 100%;
+			}
+			
+			/* akan otomatis ke tengah*/
+			.container {
+				width: 90%;
+				height: 100%;
+				margin: 50px auto;
+				box-shadow: 1px 2px 10px #b1b1b1;
+				display: grid;
+				grid-template-columns: 100px 25% 200px; /* lebar pertama 100px lebar ke 2 25% lebar ke 3 200px */
+				
+			}
+			
+			.item {
+			   background-color: rgb(109,193,215);
+			   display: flex;
+			   justify-content: center;
+			   text-align: center;
+			}
+			
+			/* untuk item yg angka nya genap akan beda warna nya */
+			.item:nth-child(even) {
+			   background-color: rgb(163,69,203);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">6</div>
+		</div>
+	</body>
+</html>
