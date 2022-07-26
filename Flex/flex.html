@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>uu</title>
+        <style type="text/css" media="all">
+            .container {
+                width: 500px;
+                display: flex;
+                border: 2px solid; /* garis pada container */
+                margin: 30px auto; /* akan membuat container nya ke temgah */
+                padding: 5px; /*membuat jarak di box*/
+                box-sizing: border-box; /* supaya box nya tidak beru ah*/
+/* flex-direction = mengatur arah flex nya bisa dari kiri ke kanan, bawah ke atas atau sebalik nya
+flex-direction: row  ( dari kiri ke kanan default)
+flex-direction: row  | row reverse ( kanan ke kiri)
+column ( atas ke bawah), column ( cooumn reverse) kebalikan nya*/
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                /* membungkus jika box yg di tambah sudah max makan akan ke bawah*/
+                justify-content: space-around ;
+                /* justify-content:  ;mengatur rata pada content
+justify-content: flex-start ( rata dari kiri ke kanan)
+flex end ( kebalikan nya)
+center ( ke tengah)
+space-betwen ( sama ke tengah, tapi jika masih ada ruang kosong akan di sejajarian )
+space-around ( hampir sama ke di atas)
+space-evenly ( sama ke atas)*/
+            }
+               
+            
+            .container div { /* artinya semua div yg ada di container akan di ubah style */ 
+                width: 100px;
+                height: 100px;
+                margin: 2px; /* membuat jarak antar box*/
+                background-color: #00ccff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item2">3</div>
+            <div class="item2">4</div>
+        </div>
+        
+    </body>
+</html>

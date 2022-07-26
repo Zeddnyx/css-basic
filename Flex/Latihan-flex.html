@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title></title>
+	<style type="text/css" media="all">
+	body {
+		font-family: 'Arial';
+		line-height: 1.5 ; /* jarak text height */
+	}
+			 
+	.container {
+		width: 100%;
+		margin: 1px;
+		background-color: #aeaeae;
+	   padding: 5px; /* membuat jarak antar box dan text */
+		box-sizing: border-box;
+		display: flex;
+	}
+			 
+	.halaman-utama {
+		flex: 2;  /* tampilan nya akan lebih besar 2x dari siderbar1 dan siderbar2 */
+		order: 2; /* kenapa 2,  karena kita ingin halaman utama nya ada di tengah */
+	}
+			 
+	.sidebar1 {
+		flex: 1;
+		order: 1; /* inj akan di kiri*/
+	}
+			 
+	.sidebar2 {
+		flex: 1;
+		order: 3; /* ini akan ada di kanan */
+	}
+			 
+			 
+			 
+			 
+	.container-dua {
+	   max-width: 800px; /* responsive jika di perbersar tidak akan berubah posisi ny */
+	   margin: 50px auto;
+	}
+			 
+	.layanan {
+      margin-bottom: 10px;
+		padding: 10px; /* memberi jarak text dan box*/
+	   box-sizing: border-box; /* supaya text tidak berubah jika memakai padding,  yg berubah hanya box nya saja */
+	}
+			 
+	.layanan.satu { background: #00a4ce; }
+	.layanan.dua { background: #7300ff; }
+	.layanan.tiga { background: #ff007a; }
+			 
+			 
+   .container-tiga {
+		max-width: 800px;
+		margin: 20px auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+   }
+		 
+	.thumbnail {
+	   width: 50%;
+	}
+   .thumbnail img{
+		width: 100%;
+	   margin: 5px;
+	}
+			 
+			 
+			 
+			 /*  container   4 */
+	.container-empat {
+		max-width: 800px;
+		margin: 50px auto;
+		display: flex;
+	}
+	.card {
+		border: 1px solid #aaa;
+		border-radius: 10px;
+		background-color: #eee;
+		margin: 10px;
+	}
+	.card .header {
+		height: 150px;
+		background-color: #666;
+	}
+	.card .content {
+		text-align: center;
+	}
+			 
+			 /* card besar tengah */
+	.card.besar {
+		transform: scale(1.12);
+	}
+			 
+			 
+			 /* latihan 5 */
+	.container-lima {
+		width: 500px;
+		height: 500px;
+		margin: 50px auto;
+		border: 2px solid #666;
+		display: flex; /* supaya kotak nya ke tengah dan tulisan nya tidak 
+		berubah jika di tambah */
+	}
+	.kotak {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		color: white;
+		text-align: center;
+		margin: auto; /* pasangan sama dengan flex supaya ke tengah*/
+		display: flex;
+	}
+	.kotak span {
+		margin: auto;
+	}
+	/* meskipun tulisan nya banyak ttp kotak sama tulisan akan di tengah*/
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 /* responsive */
+			 /* artinya jika di bawah 500px akan melakukan css yg atas
+             jika lebih dari 500px mka css di bawah akan di jalnjakn */
+	@media( min-width: 500px ) {
+		.container-dua {
+         display: flex; /* otomatis layanan 123 yg di bawah akan ke kiri ke kanan */
+		   justify-content: space-between; /* memberi jarak antar box */
+		}
+			    
+		.layanan {
+		    width: 100%;
+		}
+	    
+	   .thumbnail {
+	       width: 30%;
+	   }
+	   
+	   .card {
+	      width: 100%;
+	   }
+	}
+	</style>
+   </head>
+   <body>
+	<!--blatihan 1  colom -->
+	<div class="container">
+	    <div class="halaman-utama">
+           <h3>halaman utama</h3> 
+	        <h4> hdururururnfjjddij4n5nfcjucrjn5fbrhrjrjrjrnrnrnrjrjfudnrbdhdjjr hfufururirirjnrn5 t t g h gffufjrirjf jufufjrj  rjdindbeieoeleosid jdidirj44ooc krjtido4o4jei3ioe iri5ir84ij44b7</h4>
+	    </div>
+			
+	    <div class="sidebar1">
+	        <h3>Sidebar 1</h3>
+		     <ul>
+		        <li><a href="#">link1</a></li>
+		        <li><a href="#">link2</a></li>
+	    	     <li><a href="#">link3</a></li>
+		        <li><a href="#">link4 </a></li>
+		     </ul>
+	    </div>
+			
+	    <div class="sidebar2">
+	       <h3>Sidebar 2</h3>
+	       <h4>jejejejjerjhenrjjhehwhehehsh e e e   e e e e e rrjrjri8r83ieieiene e8euebed ejeuegowow meepoeowkwjw wjhwxbnwwo8ws ueue</h4>
+	    </div>
+	</div>
+		
+		
+	<!-- latihan 2  service -->
+	<div class="container-dua">
+	    <div class="layanan">
+          <div class="layanan satu">
+             <h3>layanan 1</h3>
+		       <h4>lorem ipsum the same time as helpful as well as the other</h4>
+		    </div>
+				
+		<div class="layanan dua">
+		    <h3>layanan 2</h3>
+		    <h4>the same time as helpful as well as the other day in the way of the cross for the day</h4>
+		</div>
+				
+	    	<div class="layanan tiga">
+		    <h3>layanan 3</h3>
+		    <h4>usually get contact a PayPal account for the stimulus check my bio hackers and he said he was going to be lah kajeun the</h4>
+		</div>
+	    </div>
+	</div>
+		
+		
+		
+		<!-- latiham tiga -->
+	<div class="container-tiga">
+            <div class="thumbnail">
+                <img src="latihanflex/mr1.jpg"/>
+	    </div>
+	    <div class="thumbnail">
+	        <img src="latihanflex/mr2.jpg"/>
+	    </div>
+	    <div class="thumbnail">
+		<img src="latihanflex/mr3.jpg"/>
+	    </div>
+	    <div class="thumbnail">
+		<img src="latihanflex/mr4.jpg"/>
+	    </div>
+	    
+	</div>
+	
+	<!-- latihan 4 -->
+	<div class="container-empat">
+	   <div class="card">
+	      <div class="header"></div>
+	      <div class="content">
+	         <p>the messages from you up to today and I don't happen to me</p>
+	         <button type="submit">buy now</button>
+	      </div> 
+	    </div>
+	    <div class="card besar">
+	      <div class="header"></div>
+	      <div class="content">
+	         <p>the messages from you up to today and I don't happen to me</p>
+	         <button type="submit">buy now</button>
+	      </div> 
+	    </div>
+	    <div class="card">
+	      <div class="header"></div>
+	      <div class="content">
+	         <p>the messages from you up to today and I don't happen to me</p>
+	         <button type="submit">buy now</button>
+	      </div> 
+	    </div>
+	   
+	</div>
+	
+	
+	
+	
+	<!-- latihan 5  centering -->
+	<div class="container-lima">
+	   <div class="kotak">
+	      <span>the boys are u have a</span>
+	   </div>
+	</div>
+    </body>
+</html>
