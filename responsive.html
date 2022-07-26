@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>responsive</title>
+        <style type="text/css" media="all">
+            .kotak {
+                height: 100px;
+                width: 100px;
+                border: 1px solid black;
+            }
+            
+            /*ukuran tablet */
+            @media screen and (max-width: 900px) {
+                .kotak {
+                    background-color: red;
+                }
+            }
+            
+            /*ukuran smartphone */
+            @media screen and (max-width: 500px) {
+                .kotak {
+                    background-color: black;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="kotak">
+            
+        </div>
+    </body>
+</html>

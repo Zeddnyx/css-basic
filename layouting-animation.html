@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      body {
+      background: #35A9DB;
+      font-family: roboto;
+      text-align: center;
+    }
+
+    h1 {
+      color: #fff;
+    }
+
+    .ketengah {
+      width: 800px;
+      margin: 10px auto;
+    }
+
+    .kotak {
+      width: 100px;
+      background: #fff;
+      height: 60px;
+      margin: 10px;
+      -webkit-transition: width 2s;
+      transition: width 2s;
+    }
+
+    .kotak:hover {
+      width: 400px;
+    }
+
+    .kotak1 {
+      transition-timing-function: linear;
+    }
+
+    .kotak2 {
+      transition-timing-function: ease;
+    }
+
+    .kotak3 {
+      transition-timing-function: ease-in;
+    }
+
+    .kotak4 {
+      transition-timing-function: ease-out;
+    }
+
+    .kotak5 {
+      transition-timing-function: ease-in-out;
+    }
+
+    .kotak5 {
+      transition-timing-function: cubic-bezier(2, 4, 5, 6);
+     }
+
+    </style>
+    <body>
+      <h1>Tutorial CSS3 Transition</h1>
+      <div class="ketengah">
+      <div class="kotak kotak1">ini kotak 1 - linear</div>
+      <div class="kotak kotak2">ini kotak 2 - ease</div>
+      <div class="kotak kotak3">ini kotak 3 - ease-in</div>
+      <div class="kotak kotak4">ini kotak 4 - ease-out</div>
+      <div class="kotak kotak5">ini kotak 5 - ease-in-out</div>
+      <div class="kotak kotak6">ini kotak 6 - cubic-bezier</div>
+    </body>
+</html>

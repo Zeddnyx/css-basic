@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>color box</title>
+        <style css>
+        
+        #box1 {
+            height: 100px;
+            width: 100px;
+            background-color: #19d1ff;
+            position: relative;
+            left: 219px;
+        }
+        #box2 {
+            height: 100px;
+            width: 100px;
+            background-color: #ff4f4f;
+            position: absolute;
+            left: 200px;
+        }
+        #box3 {
+            height: 100px;
+            width: 100px;
+            background-color: #8bffb6;
+            position: fixed;
+        }
+        #box4 {
+            height: 1000px;
+            width: 100px;
+            background-color: yellow;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="box1">relative</div>
+        <div id="box2">absolute</div>
+        <div id="box3">fixed</div>
+        <div id="box4">scroll</div>
+        <br><br>
+        <p>Relative = tidak akan mempengaruhi posisi yg lain</p>
+        <p>fixed = tidak akan menghilang walapun di scroll ( biasanya di gunakan untuk logo di kiri atas )</p>
+        <p>absolute = mempengaruhi element lain ( contoh klo box nya di pindah kan ke kanan bawah box yg di bawah nya akan naik )</p>
+     </body>
+</html>

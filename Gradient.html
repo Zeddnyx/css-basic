@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="" content="">
+		<title>gradient</title>
+		<style type="text/css" media="all">
+		/* buat var animasi gradient */
+		:root {
+			--gradient: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );
+		}
+		
+		
+		body {
+			min-height: 100vh; /* vh full screen */
+			
+			/* membuat gradient color */
+			background-color: #8EC5FC;
+            background-image: var(--gradient);
+            background-size: 250%;
+            animation: gradient-animation 20s infinite alternate ;
+            
+		}
+		@keyframes gradient-animation {
+			0% {
+				background-position: left;
+			}
+			100% {
+				background-position: right;
+			}
+		}
+			
+		</style>
+	</head>
+	<body>
+		
+	</body>
+</html> 
